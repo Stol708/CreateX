@@ -17,6 +17,22 @@ html, body {
   height: 100%;
 }
 
+.main {
+
+}
+
+.main__about {
+  padding: 180px 0 160px;
+}
+
+.main__directions {
+  padding-bottom: 180px;
+}
+
+.main__certificate {
+  margin-bottom: -46px;
+}
+
 .button {
   display: inline-block;
   letter-spacing: 0.5px;
@@ -77,7 +93,9 @@ html, body {
   line-height: 130%;
 }
 
-/* ------------------------------------------------------------- */
+/* ================================== NAVIGATION ===================================*/
+/* ================================== NAVIGATION ===================================*/
+/* ================================== NAVIGATION ===================================*/
 
 .header {
   font-weight: 700;
@@ -156,7 +174,9 @@ html, body {
   transition: all .3s;
 }
 
-/* ------------------------------------------------------------- */
+/* ==================================== HEADER =================================*/
+/* ==================================== HEADER =================================*/
+/* ==================================== HEADER =================================*/
 
 .header__body {
   flex-grow: 1;
@@ -241,10 +261,12 @@ html, body {
   margin-right: 12px;
 }
 
-/* ------------------------------------------------------------- */
+/* ================================ ABOUT =====================================*/
+/* ================================ ABOUT =====================================*/
+/* ================================ ABOUT =====================================*/
 
 .about {
-  padding: 180px 0 160px;
+  
 }
 
 .about__inner {}
@@ -343,10 +365,13 @@ html, body {
   margin-right: 16px;
 }
 
-/* ------------------------------------------------------------- */
+/* ===================================== DIRECTIONS ================================*/
+/* ===================================== DIRECTIONS ================================*/
+/* ===================================== DIRECTIONS ================================*/
+
 
 .directions {
-  padding-bottom: 180px;
+  
 }
 
 .directions__inner {
@@ -388,10 +413,6 @@ html, body {
   margin-bottom: 56px;
 }
 
-.directions__filter-item {}
-
-.directions__filter-item:last-child {}
-
 .directions__filter-btn {
   background-color: transparent;
   color: #9a9ca5;
@@ -401,6 +422,12 @@ html, body {
   line-height: 1;
   padding: 6px 8px;
   font-size: 16px;
+  transition: 0.3s;
+
+}
+
+.directions__filter-btn:hover {
+  transform: scale(1.2);
 }
 
 .directions__filter-btn--active {
@@ -517,3 +544,59 @@ html, body {
 .directions__list-item--development .directions__link-tag {
   background-color: #7772f1;
 }
+
+/* ================================= CERTIFICATE ====================================*/
+/* ================================= CERTIFICATE ====================================*/
+/* ================================= CERTIFICATE ====================================*/
+
+.main__certificate {
+  
+}
+.certificate {
+}
+.container {
+}
+.cerificate__inner {
+  display: flex;
+  gap: 126px;
+  position: relative;
+}
+
+.cerificate__inner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -167px;
+  width: 60px;
+  height: 60px;
+  background: url(../assets/decor/arrows.svg);
+}
+
+.certificate__content {
+}
+.certificate__heading {
+  max-width: 400px;
+  margin-bottom: 48px;
+}
+.certificate__text {
+  max-width: 400px;
+  margin-bottom: 32px;
+}
+.certificate__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 30px;
+}
+.certificate__logos-item {
+}
+.certificate__image-box {
+  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(30, 33, 44, 0.08), 0 26px 24px -10px rgba(30, 33, 44, 0.1), 0 60px 80px -20px rgba(30, 33, 44, 0.16);
+  border-radius: 4px;
+  overflow: hidden;
+  border: none;
+}
+
+
